@@ -60,7 +60,7 @@ public class rent {
                 j=in.nextInt();
             }
             else {
-                System.out.println("请输入租用序号为"+i+"的车的天数");
+                System.out.println("请输入" + ches.get(i-1).name+ "的租用天数");
                 int n=in.nextInt();
                 if(n<0){
                     System.out.println("输入天数不能小于0 ,重新输入");//天数输入错误
