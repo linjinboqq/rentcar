@@ -14,15 +14,19 @@ public class rent {
     private static zaike zaike;
     private static zaike zaike1;
     private static zaike zaike2;
-    private static List<che> ches =new ArrayList<>();
-    private static int[] mount;
-    private static int[] day;
+    private static List<che> ches =new ArrayList<>(); //存放车的数据
+    private static int[] mount;//租用数量
+    private static int[] day;//租用天数
 
     public static void main(String[] args) {
         init();//初始化加载数据
         zhanshi();//展示数据
         shuru();//用户输入
         result();//计算并返回结果
+        System.out.println("输入回车结束租车");
+        Scanner in=new Scanner(System.in);
+        in.nextLine();
+
     }
 
     //数据有点乱 多多包涵
